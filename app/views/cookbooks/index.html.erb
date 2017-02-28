@@ -2,7 +2,5 @@
 
 <ul>
   <% @cookbooks.each do |cookbook| %>
-    <li>
       <%= link_to "#{cookbook.title} (#{cookbook.bookshelf.location})", cookbook %>
-    </li>
   <% end %>
