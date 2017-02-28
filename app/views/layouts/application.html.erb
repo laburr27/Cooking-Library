@@ -10,6 +10,9 @@
 
   <body>
     <h1>My Cookbook Library</h1>
+    <nav>
+      <%= link_to "View Bookshelves", bookshelves_path %> | <%= link_to "View Cookbooks", cookbooks_path %> | <%= link_to "Add a Cookbook", new_cookbook_path %>
+    </nav>
     <%= yield %>
   </body>
 </html>

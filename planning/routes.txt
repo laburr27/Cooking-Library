@@ -1,0 +1,9 @@
+Prefix Verb URI Pattern                   Controller#Action
+         root GET  /                             bookshelves#index
+  bookshelves GET  /bookshelves(.:format)        bookshelves#index
+    bookshelf GET  /bookshelves/:id(.:format)    bookshelves#show
+    cookbooks GET  /cookbooks(.:format)          cookbooks#index
+              POST /cookbooks(.:format)          cookbooks#create
+ new_cookbook GET  /cookbooks/new(.:format)      cookbooks#new
+edit_cookbook GET  /cookbooks/:id/edit(.:format) cookbooks#edit
+     cookbook GET  /cookbooks/:id(.:format)      cookbooks#show

@@ -1,0 +1,8 @@
+<h1><%= @bookshelf.name %></h1>
+
+<% @bookshelf.cookbooks.each do |cookbook| %>
+  <ul>
+    <%= cookbook.title %>
+    <%= image_tag cookbook.img_url %>
+  </ul>
+<% end %>

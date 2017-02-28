@@ -1,0 +1,8 @@
+
+<ul>
+  <% @bookshelves.each do |bookshelf| %>
+  <li>
+    <%= link_to bookshelf.name, bookshelf %>
+  </li>
+</ul>
+<% end %>
