@@ -6,13 +6,24 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
   </head>
 
   <body>
-    <h1>My Cookbook Library</h1>
-    <nav>
-      <%= link_to "View Bookshelves", bookshelves_path %> | <%= link_to "View Cookbooks", cookbooks_path %> | <%= link_to "Add a Cookbook", new_cookbook_path %>
-    </nav>
-    <%= yield %>
+    <header>My Cookbook Library</header>
+      <main>
+        <nav>
+          <%= link_to "Bookshelves", bookshelves_path %> <%= link_to "Cookbooks", cookbooks_path %> <%= link_to "New", new_cookbook_path %>
+        </nav>
+
+        <section>
+        <%= yield %>
+        </section>
+
+        <aside>
+          Random stuff going here for now.
+        </aside>
+      </main>
+    <footer>WDI Project 2 - Lisa Burr</footer>
   </body>
 </html>
