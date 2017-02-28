@@ -26,6 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: 'Josefin Slab', serif;
 }
 
 header, footer {
@@ -62,6 +63,7 @@ nav, section, aside {
 section {
   flex-grow: 1;
   flex-basis: 50%;
+  font-size: 16pt;
 }
 
 @media screen and (max-width: 600px){
