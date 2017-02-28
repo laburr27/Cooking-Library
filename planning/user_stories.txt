@@ -1,0 +1,28 @@
+User Stories
+
+Bronze:
+As a cookbook collector I want to be able to organize my cookbooks by location (kitchen, sun room, office)
+
+As a cookbook collector I want to be able to view cookbooks alpha by title, author, bookshelf
+
+As a cookbook collector I want to be able to view the cover of the cookbook
+
+As a cookbook collector I want to be able to filter for a cookbook by author, title or location
+
+As a cookbook collector I want to be able to go to the cookbooks website or Amazon page
+
+Silver:
+As a cookbook collector I want to be able to checkout a cookbook to track usage
+
+As a cookbook collector I want to be able to make date-stamped notes for each cookbook
+
+As a cookbook collector I want to be able to assign multiple categories to a cookbook
+
+As a cookbook collector I want to be able to filter my cookbooks by category
+
+Gold:
+As a cookbook collector I want to be able to go to an author's website or blog
+
+As a cookbook author I want to be able to "favorite" a cookbook
+
+As a cookbook author I want to be able to list recipes used with notes and "times made"
