@@ -7,11 +7,11 @@
 
       <div class="w3-container">
         <% bookshelf.cookbooks.each do |cookbook| %>
-          <a class="w3-text-black w3-padding-16" href="<%= cookbook_path(cookbook) %>"><%= cookbook.title %></a>
+          <%= link_to "#{cookbook.title}", cookbook_path(cookbook), :class => "w3-text-black w3-padding-16" %>
         <% end %>
         <%= link_to "All #{bookshelf.name}", bookshelf, :class => "w3-text-black w3-padding-16" %>
       </div>
-
+      
     </div>
   <% end %>
 <hr>

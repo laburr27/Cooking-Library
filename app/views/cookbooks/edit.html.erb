@@ -1,23 +1,38 @@
-<h2>Edit Cookbook</h2>
+<hr>
+<h2 class="w3-center">Edit This Cookbook</h2>
 
+<div class="w3-row-padding">
+
+<div class="w3-block">
+<form class="w3-container w3-card-4">
 <%= form_for @cookbook do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+  <div class="w3-group">
+    <%= f.text_field :title, class: "w3-input w3-border w3-round"%>
+    <%= f.label :title, class: "w3-label w3-validate" %>
+  </div>
+  <div class="w3-group">
+    <%= f.text_field :author, class: "w3-input w3-border w3-round"%>
+    <%= f.label :author, class: "w3-label w3-validate" %>
+  </div>
+  <div class="w3-group">
+    <%= f.text_field :img_url, class: "w3-input w3-border w3-round"%>
+    <%= f.label :img_url, class: "w3-label w3-validate" %>
+  </div>
+  <div class="w3-group">
+    <%= f.text_field :format, class: "w3-input w3-border w3-round"%>
+    <%= f.label :format, class: "w3-label w3-validate" %>
+  </div>
+  <div class="w3-group">
+    <%= f.text_area :summary, class: "w3-input w3-border w3-round"%>
+    <%= f.label :summary, class: "w3-label w3-validate" %>
+  </div>
+  <div class="w3-group">
+    <%= f.text_field :bookshelf_id, class: "w3-input w3-border w3-round"%>
+    <%= f.label :bookshelf, class: "w3-label w3-validate" %>
+  </div>
 
-  <%= f.label :author %>
-  <%= f.text_field :author %>
-
-  <%= f.label :img_url %>
-  <%= f.text_field :img_url %>
-
-  <%= f.label :format %>
-  <%= f.text_field  :format %>
-
-  <%= f.label :summary %>
-  <%= f.text_field  :summary %>
-
-  <%= f.label :bookshelf %>
-  <%= f.text_field :bookshelf_id %>
-
+  <div class="w3-center w3-button w3-block w3-padding-large w3-red w3-margin-bottom">
   <%= f.submit %>
+  </div>
+  <hr>
 <% end %>

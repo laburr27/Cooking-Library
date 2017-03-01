@@ -1,5 +1,14 @@
-<h2><%= @cookbook.title %> <%= link_to "(edit)", edit_cookbook_path(@cookbook) %></h2>
-<h3>Location: <%= @cookbook.bookshelf.location %></h3>
-<h3>Status: <%= @cookbook.bookshelf.name %></h3>
+<hr>
+<h1 class="w3-center"><%= @cookbook.title %> <%= link_to "(edit)", edit_cookbook_path(@cookbook) %></h1>
 
-<img src="<%= @cookbook.img_url %>"></img>
+<div class="w3-container" style="margin-top:75px">
+  <img src="<%= @cookbook.img_url %>"></img>
+
+  <h3><b>Summary</b></h3>
+   <hr style="width: 50px; border: 5px solid red" class="w3-round">
+     <p>"<%= @cookbook.summary %>"</p>
+   <hr style="width: 50px; border: 5px solid red" class="w3-round">
+  <h4 class="w3-left">Location: <%= @cookbook.bookshelf.location %></h4><h4 class="w3-right">Bookshelf: <%= @cookbook.bookshelf.name %></h4>
+ </div>
+
+<hr>
