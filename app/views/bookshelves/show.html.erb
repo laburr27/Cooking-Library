@@ -1,8 +1,20 @@
-<h1><%= @bookshelf.name %></h1>
 
-<% @bookshelf.cookbooks.each do |cookbook| %>
-  <ul>
-    <%= cookbook.title %>
-    <%= image_tag cookbook.img_url %>
-  </ul>
-<% end %>
+<div class="w3-container w3-center">
+  <hr>
+  <h1><%= @bookshelf.name %></h1>
+</div>
+
+<div class="w3-row-padding">
+  <% @bookshelf.cookbooks.each do |cookbook| %>
+    <div class="w3-quarter">
+      <div class="w3-card-2">
+        <%= image_tag cookbook.img_url, :class => "img" %>
+        <div class="w3-container" style="text-align: center">
+          <p><%= link_to "#{cookbook.title}", cookbook %></p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  <% end %>
+</div>
+<hr>
