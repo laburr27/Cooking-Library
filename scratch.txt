@@ -1,0 +1,36 @@
+<!--
+
+<button onclick="myAccFunc('Demo2')" class="w3-padding-16 w3-hover-dark-grey w3-btn-block w3-left-align">Active</button>
+<div id="Demo2" class="w3-accordion-content">
+  <a class="w3-text-black w3-padding-16" href="javascript:void(0)">Link 1</a>
+  <a class="w3-text-black w3-padding-16" href="javascript:void(0)">Link 2</a>
+  <a class="w3-text-black w3-padding-16" href="javascript:void(0)">Link 3</a>
+</div>
+
+<button onclick="myAccFunc('Demo3')" class="w3-padding-16 w3-hover-dark-grey w3-btn-block w3-left-align">Reading</button>
+<div id="Demo3" class="w3-accordion-content">
+  <a class="w3-text-black w3-padding-16" href="javascript:void(0)">Link 1</a>
+  <a class="w3-text-black w3-padding-16" href="javascript:void(0)">Link 2</a>
+  <a class="w3-text-black w3-padding-16" href="javascript:void(0)">Link 3</a>
+  </div>
+</div>
+
+<button onclick="myAccFunc('Demo4')" class="w3-padding-16 w3-hover-dark-grey w3-btn-block w3-left-align">Planning</button>
+<div id="Demo4" class="w3-accordion-content">
+  <a class="w3-text-black w3-padding-16" href="javascript:void(0)">Link 1</a>
+  <a class="w3-text-black w3-padding-16" href="javascript:void(0)">Link 2</a>
+  <a class="w3-text-black w3-padding-16" href="javascript:void(0)">Link 3</a>
+</div>
+
+<button onclick="myAccFunc('Demo5')" class="w3-padding-16 w3-hover-dark-grey w3-btn-block w3-left-align">Inactive</button>
+<div id="Demo5" class="w3-accordion-content">
+  <%= link_to "Cookbooks", cookbooks_path, :class => "w3-text-black w3-padding-16" %>
+
+</div>
+
+<div> -->
+
+
+
+<!-- </div>
+<hr>
