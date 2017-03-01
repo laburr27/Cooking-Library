@@ -1,6 +1,9 @@
 <h1>My Cookbooks</h1>
 
 <ul>
+  <li>
   <% @cookbooks.each do |cookbook| %>
-      <%= link_to "#{cookbook.title} (#{cookbook.bookshelf.location})", cookbook %>
+      <%= link_to "#{cookbook.title}", cookbook %>
   <% end %>
+  </li>
+</ul>
