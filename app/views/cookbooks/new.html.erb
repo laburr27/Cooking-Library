@@ -1,23 +1,63 @@
-<h2>Add A New Cookbook</h2>
+<hr>
+<h2 class="w3-center">Add a New Cookbook</h2>
 
+<div class="w3-row-padding">
+
+<div class="w3-block">
+<form class="w3-container w3-card-4">
 <%= form_for @cookbook do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+  <div class="w3-group">
+    <%= f.text_field :title, class: "w3-input"%>
+    <%= f.label :title, class: "w3-label w3-validate" %>
+  </div>
+  <div class="w3-group">
+    <%= f.text_field :author, class: "w3-input"%>
+    <%= f.label :author, class: "w3-label w3-validate" %>
+  </div>
+  <div class="w3-group">
+    <%= f.text_field :img_url, class: "w3-input"%>
+    <%= f.label :img_url, class: "w3-label w3-validate" %>
+  </div>
+  <div class="w3-group">
+    <%= f.text_field :format, class: "w3-input"%>
+    <%= f.label :format, class: "w3-label w3-validate" %>
+  </div>
+  <div class="w3-group">
+    <%= f.text_field :summary, class: "w3-input"%>
+    <%= f.label :summary, class: "w3-label w3-validate" %>
+  </div>
+  <div class="w3-group">
+    <%= f.text_field :bookshelf_id, class: "w3-input"%>
+    <%= f.label :bookshelf, class: "w3-label w3-validate" %>
+  </div>
 
-  <%= f.label :author %>
-  <%= f.text_field :author %>
+  <!-- <div class="w3-row">
+    <div class="w3-half">
+      <input id="milk" class="w3-check" type="checkbox">
+      <label class="w3-validate">Milk</label>
+      <br>
+      <input id="sugar" class="w3-check" type="checkbox">
+      <label class="w3-validate">Sugar</label>
+      <br>
+      <input id="lemon" class="w3-check" type="checkbox">
+      <label class="w3-validate">Lemon</label>
+      <br><br>
+    </div>
 
-  <%= f.label :img_url %>
-  <%= f.text_field :img_url %>
+    <div class="w3-half">
+      <input id="male" class="w3-radio" type="radio" name="gender" value="male" checked>
+      <label class="w3-validate">Male</label>
+      <br>
+      <input id="female" class="w3-radio" type="radio" name="gender" value="female">
+      <label class="w3-validate">Female</label>
+      <br>
+      <input id="unknown" class="w3-radio" type="radio" name="gender" value="">
+      <label class="w3-validate"> Don't know</label>
+    </div>
+  </div> -->
 
-  <%= f.label :format %>
-  <%= f.text_field  :format %>
-
-  <%= f.label :summary %>
-  <%= f.text_field  :summary %>
-
-  <%= f.label :bookshelf %>
-  <%= f.text_field :bookshelf_id %>
-
+  <div class="w3-center">
   <%= f.submit %>
+  </div>
+  <hr>
 <% end %>

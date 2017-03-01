@@ -66,9 +66,13 @@ img{margin-bottom:-5px}a{color:inherit}
 
 .w3-table th:first-child,.w3-table td:first-child,.w3-table-all th:first-child,.w3-table-all td:first-child{padding-left:16px}
 
-.w3-btn,.w3-btn-block,.w3-button{border:none;display:inline-block;outline:0;padding:6px 16px;vertical-align:middle;overflow:hidden;text-decoration:none!important;color:#fff;background-color:#000;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-btn,.w3-button{border: 2px solid dark-grey;display:inline-block;outline:0;padding:6px 16px;vertical-align:middle;overflow:hidden;text-decoration:none!important;color:#fff;background-color: #ffffff;text-align:center;cursor:pointer;white-space:nowrap}
 
-.w3-btn:hover,.w3-btn-block:hover,.w3-btn-floating:hover,.w3-btn-floating-large:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+
+.w3-btn-block{border: 2px solid dark-grey;display:inline-block;outline:0;padding:6px 16px;vertical-align:middle;overflow:hidden;text-decoration:none!important;color:#fff;background-color: #f51900;background-image: url("https://www.transparenttextures.com/patterns/embossed-paper.png");text-align:center;cursor:pointer;white-space:nowrap}
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+.w3-btn:hover,.w3-btn-block:hover,.w3-btn-floating:hover,.w3-btn-floating-large:hover{box-shadow:0 8px 16px 0 rgba(175, 64, 15, .65),0 6px 20px 0 rgba(175, 64, 15, .65)}
 
 .w3-button{color:#000;background-color:#f1f1f1;padding:8px 16px}.w3-button:hover{color:#000!important;background-color:#ccc!important}
 
