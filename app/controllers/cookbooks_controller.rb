@@ -9,7 +9,7 @@ class CookbooksController < ApplicationController
   end
 
   def create
-    @cookbook = Cookbook.create!(cookbook_params)
+    @cookbook = Cookbook.create(cookbook_params)
     redirect_to cookbooks_path(@cookbook)
   end
 
