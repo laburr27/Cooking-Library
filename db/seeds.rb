@@ -8,6 +8,8 @@
 Cookbook.destroy_all
 Bookshelf.destroy_all
 
+# would add ! to Active Record methods here so you will know why they fail if they do.
+
 vintage = Bookshelf.create(name: 'Vintage', location: 'Office')
 active = Bookshelf.create(name: 'Active', location: 'Kitchen')
 inactive = Bookshelf.create(name: 'Inactive', location: 'Sunroom')

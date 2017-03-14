@@ -1,5 +1,7 @@
 # My Cooking Library
 
+<!-- Nice evidence of planning and documentation I would add setup instructions also. -->
+
 <h2>  What is it?</h2>
 <p>As an avid collector of cookbooks, both vintage and current, I created an app that would allow me to organize my cookbooks by bookshelf (i.e. location).</p>
 
