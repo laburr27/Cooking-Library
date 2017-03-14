@@ -27,6 +27,8 @@ class CookbooksController < ApplicationController
     redirect_to cookbook_path(@cookbook)
   end
 
+  # need destroy here
+  
   private
   def cookbook_params
     params.require(:cookbook).permit(:title, :author, :img_url, :format, :summary, :bookshelf)

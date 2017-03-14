@@ -1,4 +1,9 @@
 <hr>
+
+<!-- Avoid hr and use border-bottom instead -->
+<!-- Consolidate this and edit into a _form.html.erb partial -->
+<!-- http://guides.rubyonrails.org/layouts_and_rendering.html#using-partials -->
+
 <h1 class="w3-center">Add a New Cookbook</h1>
 
 <div class="w3-row-padding">
@@ -25,6 +30,14 @@
     <%= f.text_area :summary, class: "w3-input w3-border w3-round"%>
     <%= f.label :summary, class: "w3-label" %>
   </div>
+
+  <!-- The issue with this text field style input is that user has to **exactly match** an existing Bookshelf record in the database.
+  in between interpolation/erb tags. try the following instead:
+
+  collection_select(:cookbook, :bookshelf_id, Bookshelf.all, :id, :title, prompt: true)
+
+  Since you don't have optional true on your `belongs_to :bookshelf` statement in, you risk a null association and the database will most likely throw an error here if it can't attach the cookbook to valid, extant Bookshelf object. This solves the issue.
+  -->
   <div class="w3-group">
     <%= f.text_field :bookshelf_id, class: "w3-input w3-border w3-round"%>
     <%= f.label :bookshelf, class: "w3-label" %>
